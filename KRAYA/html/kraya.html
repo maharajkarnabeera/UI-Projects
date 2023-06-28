@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/kraya.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
+    <title>KRAYA</title>
+</head>
+<body  id="top">
+    <header>
+        <div class="header-div mb-section display-flex">
+            <div class="section mobile-header-div-view">
+                <div class="header-help desktop-display">
+                    <i class="fa-solid fa-phone left-icons"></i>
+                    <a href="#" title="need help">NEED HELP?</a>
+                </div>
+                <ul class="header-div-list">
+                    <li class="header-div-list-items display-flex ">
+                        <a href="#" title="WISHLIST" class="mobile-display">WISHLIST</a>
+                        <div class="right-icons"><i class="fa-regular fa-heart fa-lg"><div class="wishlist-count icon-count">0</div></i></div>
+                    </li>
+                    <li class="header-div-list-items header-items-separation-line mobile-display"></li>
+                    <li class="header-div-list-items display-flex ">
+                        <a href="#" title="CART" class="mobile-display">CART</a>
+                        <div class="right-icons"><i class="fa-solid fa-bag-shopping fa-lg"><div class="cart-count icon-count">0</div></i></div>
+                    </li>
+                    <li class="header-div-list-items header-items-separation-line mobile-display"></li>
+                    <li class="header-div-list-items display-flex ">
+                        <div class="left-icons"><i class="fa-solid fa-user"></i></div>
+                        <a href="#" title="sign in details">MAHARAJ</a>
+                        <div class="right-icons mobile-display"><i class="fa-solid fa-chevron-down fa-lg"></i></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="header-nav display-flex">
+            <div class="section header-nav-div display-flex">
+                <div class="kraya-logo-container"><img class="kraya-logo" src="../assets/icons/Kraya_logo.svg" alt="Kraya_logo"></div>
+                <ul class="nav-list display-flex mobile-display">
+                    <li class="nav-list-item"><a href="#" target="_blank" title="PHONE">PHONE</a></li>
+                    <li class="nav-list-item"><a href="https://www.google.com" target="_blank" title="TELEVISION">TELEVISION</a></li>
+                    <li class="nav-list-item"><a href="https://www.google.com" target="_blank" title="REFRIGERATOR">REFRIGERATOR</a></li>
+                    <li class="nav-list-item"><a href="https://www.google.com" target="_blank" title="LAPTOP">LAPTOP</a></li>
+                    <li class="nav-list-item"><a href="https://www.google.com" target="_blank" title="WASHING MACHINE">WASHING MACHINE</a></li>
+                    <li class="nav-list-item"><a href="https://www.google.com" target="_blank" title="DOWNLOADS">DOWNLOADS</a></li>
+                </ul>
+                <div class="nav-search-bar display-flex">
+                    <input type="text" class="search-input" placeholder="search..">
+                    <a href="#" title="search icon" class=" search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </nav>  
+    </header>
+
+    <!-- main -->
+
+    <main>
+        <section>
+            <div class="mb-section desktop-display mb-sort-filter-buttons">
+                <button class="mb-sort-button mb-button"><i class="fa-solid fa-sort left-icons"></i>SORT BY</button>
+                <button class="mb-filter-button mb-button"><i class="fa-solid fa-filter left-icons"></i>FILTERS</button>
+            </div>
+            <div class="mb-section">
+                <div class="desktop-display js-sort-methods sort-filter-methods">
+                    <div class="close-icon-container">
+                        <a href="#" title="close icon" class="close-icon"><i class="fa-solid fa-rectangle-xmark"></i></a>
+                    </div>
+                    <ul>
+                        <li><a class="js-ratings" href="#" title="sort by ratings">Ratings</a></li>
+                        <li><a class="js-price" href="#" title="sort by price (low-High)">Price low-High</a></li>
+                        <li><a class="js-new-launches" href="#" title="sort by new launches">Newest First</a></li>
+                    </ul>
+                </div>
+                <div class="desktop-display js-filter-methods sort-filter-methods">
+                    <div class="close-icon-container">
+                        <a href="#" title="close icon" class="close-icon"><i class="fa-solid fa-rectangle-xmark"></i></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <span>Brands</span>
+                            <form> 
+                                <ul class="display-flex">
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox samsung" type="checkbox" id="mb-samsung">
+                                        <label class="brand-label" for="mb-samsung">Samsung</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox ROGPhone" type="checkbox" id="mb-ROGPhone">
+                                        <label class="brand-label" for="mb-ROGPhone">ROG Phone</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox apple" type="checkbox" id="mb-apple">
+                                        <label class="brand-label" for="mb-apple">Apple</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox google" type="checkbox" id="mb-google">
+                                        <label class="brand-label" for="mb-google">Google</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox realme" type="checkbox" id="mb-realme">
+                                        <label class="brand-label" for="mb-realme">RealMe</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox BlackShark" type="checkbox" id="mb-BlackShark">
+                                        <label class="brand-label" for="mb-BlackShark">Black Shark</label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-results desktop-display mb-section">
+                <span class="showing-results-line">Results</span>
+            </div>
+        </section>
+        <section class="main-section section">
+            <div class="main-section-part1 mobile-display">
+                <h2 class="home-path">HOME / MOBILES</h2>
+                <div class="filters">
+                    <ul class="filters-list">
+                        <li class="filters-items display-flex" tabindex="0">
+                            <div class="filter-item-details">
+                                <span aria-label="filters section" class="filters-title">FILTERS</span>
+                                <span class="filters-clear">CLEAR ALL</span>
+                            </div>
+                            <div class="filters-applied">
+
+                            </div>
+                        </li>
+                        <li class="filters-items display-flex" tabindex="0">
+                            <div class="filter-item-details">
+                                <span class="filter-type">Price</span>
+                                <a href="#" title="dropdowm icon"><i class="fa-solid fa-chevron-down"></i></a>
+                            </div>
+                        </li>
+                        <li class="filters-items display-flex" tabindex="0">
+                            <div class="filter-item-details">
+                                <span class="filter-type">Brand</span>
+                                <a href="#" title="dropdowm icon"><i class="fa-solid fa-chevron-down"></i></a>
+                            </div>
+                            <form class="filter-type-form"> 
+                                <ul class="display-flex">
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox samsung" type="checkbox" id="samsung" value="samsung">
+                                        <label class="brand-label" for="samsung">Samsung</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox ROGPhone" type="checkbox" id="ROGPhone" value="ROG Phone">
+                                        <label class="brand-label" for="ROGPhone">ROG Phone</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox apple" type="checkbox" id="apple" value="iphone">
+                                        <label class="brand-label" for="apple">Apple</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox google" type="checkbox" id="google" value="Google Pixel">
+                                        <label class="brand-label" for="google">Google</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox realme" type="checkbox" id="realme" value="Realme">
+                                        <label class="brand-label" for="realme">RealMe</label>
+                                    </li>
+                                    <li class="brand-item display-flex">
+                                        <input class="brand-checkbox BlackShark" type="checkbox" id="BlackShark" value="Black Shark">
+                                        <label class="brand-label" for="BlackShark">Black Shark</label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </li>
+                        <li class="filters-items display-flex" tabindex="0">
+                            <div class="filter-item-details">
+                                <span class="filter-type">Battery Capacity</span>
+                                <a href="#" title="dropdowm icon"><i class="fa-solid fa-chevron-down"></i></a>
+                            </div>
+                        </li>
+                        <li class="filters-items display-flex" tabindex="0">
+                            <div class="filter-item-details">
+                                <span class="filter-type">Screen Size</span>
+                                <a href="#" title="dropdowm icon"><i class="fa-solid fa-chevron-down"></i></a>
+                            </div>
+                        </li>
+                        <li class="filters-items display-flex" tabindex="0">
+                            <div class="filter-item-details">
+                                <span class="filter-type">RAM</span>
+                                <a href="#" title="dropdowm icon"><i class="fa-solid fa-chevron-down"></i></a>
+                            </div>
+                        </li>
+                        <li class="filters-items display-flex" tabindex="0">
+                            <div class="filter-item-details">
+                                <span class="filter-type">Customer Ratings</span>
+                                <a href="#" title="dropdowm icon"><i class="fa-solid fa-chevron-down"></i></a>
+                            </div>
+                        </li>
+                        <li class="filters-items display-flex" tabindex="0">
+                            <div class="filter-item-details">
+                                <span class="filter-type">Camera</span>
+                                <a href="#" title="dropdowm icon"><i class="fa-solid fa-chevron-down"></i></a>
+                            </div>
+                        </li>
+                        <li class="filters-items display-flex" tabindex="0">
+                            <div class="filter-item-details">
+                                <span class="filter-type">Resolution</span>
+                                <a href="#" title="dropdowm icon"><i class="fa-solid fa-chevron-down"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-section-part2">
+                <div class="results-sortby mobile-display">
+                    <span class="showing-results-line">Showing results for “Phone”</span>
+                    <div class="sortby-div">
+                        <h4>Sort By</h4>
+                        <ul class="sortby-list">
+                            <li><a class="sortby-list-items js-ratings" href="#" title="sort by ratings">Ratings</a></li>
+                            <li><a class="sortby-list-items js-price" href="#" title="sort by price (low-High)">Price low-High</a></li>
+                            <li><a class="sortby-list-items js-new-launches" href="#" title="sort by new launches">Newest First</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobiles-container  mb-section"></div>
+                <div class="show-more">
+                    <button class="load-more-button">MORE</button>
+                </div>
+                <div class="no-more-results">no more results..</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <div  class="footer-page-up section mb-section"><a href="#top" title="to-top"><i class="fa-solid fa-chevron-up"></i></a></div>
+        <div class="section mb-section footer-part1">
+            <div class="subscribe">
+                <div>
+                    <h3 class="footer-title">LET'S STAY IN TOUCH</h3>
+                    <p class="footer-sub-titles">Get updates on sales specials and more</p>
+                </div>
+                <div class="email-subscribe">
+                    <input class="input-email" type="email" id="Email" placeholder="Email address">
+                    <label class="subscribe-label" for="Email">SUBSCRIBE</label>
+                </div>
+            </div>
+            <div class="footer-media">
+                <div>
+                    <h3 class="footer-title">FOLLOW KRAYA.</h3>
+                    <p class="footer-sub-titles">We want to hear from you</p>
+                </div>
+                <div class="footer-media-icons">
+                    <a href="#" title="facebook link" class="media-icons"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" title="twitter link" class="media-icons"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" title="youtube link" class="media-icons"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" title="instagram link" class="media-icons"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="section footer-part2 mb-section">
+            <div class="footer-links">
+                <div class="footer-links-items">
+                    <h4 class="footer-sub-titles">ABOUT</h4>
+                    <ul>
+                        <li class="footer-link-list-items"><a href="#" title="about us">About Us</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="Careers">Careers</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="Blog">Blog</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="News">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-items">
+                    <h4 class="footer-sub-titles">SUPPORT</h4>
+                    <ul>
+                        <li class="footer-link-list-items"><a href="#" title="Payment">Payment</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="Shipping">Shipping</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="Cancellation & Returns">Cancellation & Returns</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="FAQs">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-items">
+                    <h4 class="footer-sub-titles">POLICY</h4>
+                    <ul>
+                        <li class="footer-link-list-items"><a href="#" title="Terms of Use">Terms of Use</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="Intellectual Property">Intellectual Property</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="Sitemap">Sitemap</a></li>
+                        <li class="footer-link-list-items"><a href="#" title="Security">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-mailus-items">
+                    <h4 class="footer-sub-titles">MAIL US</h4>
+                    <p  class="footer-link-list-items">17187 N. Laurel Park Dr., Ste. 110 Livonia, MI 48152 USA</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-details">
+                    <h3 class="contact-number">1800 123 4567</h3>
+                    <h5 class="contact-letter-spacing footer-sub-titles">Service hours: 09:00-21:00</h5>
+                    <button class="contact-chat-button">CHAT SUPPORT</button>
+                </div>
+                <div class="footer-payment-methods">
+                    <h4 class="footer-sub-titles contact-letter-spacing">PAYMENT METHODS</h4>
+                    <ul class="payment-method-list">
+                        <li class="payment-method-logo"><img src="../assets/icons/visa.png" alt="visa"></li>
+                        <li class="payment-method-logo"><img src="../assets/icons/mastercard.png" alt="mastercard"></li>
+                        <li class="payment-method-logo"><img src="../assets/icons/discover network.png" alt="discover network"></li>
+                        <li class="payment-method-logo"><img src="../assets/icons/american express.png" alt="american express"></li>
+                        <li class="payment-method-logo"><img src="../assets/icons/paypal.png" alt="paypal"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mb-section footer-part3 section">
+            <p>Copyright © 2010 - 2018 commerce factory. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/newkraya.js"></script>
+</body>
+</html>
