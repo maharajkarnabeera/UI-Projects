@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anybody Can Fly</title>
+    <link rel="stylesheet" href="../css/style.css   ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Suez+One&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!---------------------------header----------------------------------->
+    <header>
+       <nav class="display-width display-flex">
+
+        <!-- logo -->
+        <div class="logo display-flex-column">
+            <img class="logo-img" src="../assests/world.png" alt="a plane around the globe Logo">
+            <span class="logo-title">acf</span>
+            <span class="title-abrevation">--anybody can fly--</span>
+        </div>
+
+        <!-- menu list -->
+        <div>
+            <ul class="menu-holder display-flex">
+                <li><a class="menu-items menu-flight-booking" href="index.html">flight booking</a></li>
+                <li><a class="menu-items" href="#">flight status</a></li>
+                <li><a class="menu-items" href="#">contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- login/sign up -->
+        <div class="login-signup display-flex">
+            <a href="#" class="user-icon"><i class="fa-solid fa-circle-user"></i></a>
+            <a href="#" class="user-signin">login / sign up</a>
+        </div>
+       </nav>
+    </header>
+
+
+    <!----------------------------------- main------------------------------------------------>
+    <main>
+
+        <!-- flights search form -->
+        <div class="flight-booking display-flex-column display-width">
+            <h1 class="flights-description">Exploring The World In Comfort.</h1>
+            <div class="flight-booking-form-container">
+                <form class="display-flex-column flight-search-form" action="#">
+                    <div class="display-flex form-blocks">
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="trip" id="single" required value="single">
+                            <label for="single">one way</label>
+                        </div>
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="trip" id="round" required value="round">
+                            <label for="round">round trip</label>
+                        </div>
+                    </div>
+                    <div class="display-flex form-blocks">
+                        <div class="form-blocks-from-item form-blocks-item display-flex-column">
+                            <label for="from">from</label>
+                            <input type="text" placeholder="Enter From" id="from" required>
+                        </div>
+                        <div class="form-blocks-to-item form-blocks-item display-flex-column">
+                            <label for="to">to</label>
+                            <input type="text" placeholder="Enter Destination" id="to" required>
+                        </div>
+                    </div>
+                    <div class="display-flex form-blocks">
+                        <div class="display-flex-column form-blocks-item form-blocks-departure-item">
+                            <label for="departure">departure</label>
+                            <input type="date" name="departure" id="departure" min="" required>
+                        </div>
+                        <div class="display-flex-column form-blocks-item form-blocks-return-item">
+                            <label for="return">return</label>
+                            <input type="date" name="return" id="return" min="" required>
+                        </div>
+                    </div>
+                    <div class="display-flex form-blocks">
+                        <div class="display-flex-column form-blocks-item passengers-adult">
+                            <label for="adult">adult</label>
+                            <input type="number" class="passengers" name="adult" id="adult" value="1" min="1" max="9">
+                        </div>
+                        <div class="display-flex-column form-blocks-item passengers-child">
+                            <label for="child">child</label>
+                            <input type="number" class="passengers" name="child" id="child" value="0" min="0" max="6">
+                        </div>
+                        <div class="display-flex-column form-blocks-item passengers-infant">
+                            <label for="infant">infant</label>
+                            <input type="number" class="passengers" name="infant" id="infant" value="0" min="0" max="2">
+                        </div>
+                    </div>
+                    <div class="display-flex form-blocks">
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="class" id="economy" required value="economy">
+                            <label for="economy">economy</label>
+                        </div>
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="class" id="business" required value="business">
+                            <label for="business">business</label>
+                        </div>
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="class" id="first-class" required value="first-class">
+                            <label for="first-class">first class</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-search-flights">search flights</button>
+                </form>
+            </div>
+           
+        </div>
+    </main>
+
+
+    <!----------------------------------------------------------- footer---------------------------------------------------->
+    <footer>
+        <p class="copyrights">&#169; 2023 anybody can fly</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

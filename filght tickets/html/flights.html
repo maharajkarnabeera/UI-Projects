@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anybody Can Fly</title>
+    <link rel="stylesheet" href="../css/style.css   ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Suez+One&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <nav class="display-width display-flex">
+        <div class="logo display-flex-column">
+            <img class="logo-img" src="../assests/world.png" alt="a plane around the globe Logo">
+            <span class="logo-title">acf</span>
+            <span class="title-abrevation">--anybody can fly--</span>
+        </div>
+        <div>
+            <ul class="menu-holder display-flex">
+                <li><a class="menu-items" href="index.html">flight booking</a></li>
+                <li><a class="menu-items" href="#">flight status</a></li>
+                <li><a class="menu-items" href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="login-signup display-flex">
+            <a href="#" class="user-icon"><i class="fa-solid fa-circle-user"></i></a>
+            <a href="#" class="user-signin">login / sign up</a>
+        </div>
+       </nav>
+    </header>
+
+
+
+    <!------------------------------------- main section ---------------------------------------------------------------------------->
+    <main>
+
+        <!-- flights search form -->
+        <div class="flight-booking display-flex-column display-width">
+            <div class="flight-booking-form-container">
+                <form class="display-flex">
+                    <div class="display-flex form-blocks">
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="trip" id="single" required value="single">
+                            <label for="single">one way</label>
+                        </div>
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="trip" id="round" required value="round">
+                            <label for="round">round trip</label>
+                        </div>
+                    </div>
+                    <div class="display-flex form-blocks">
+                        <div class="form-blocks-from-item form-blocks-item display-flex-column">
+                            <label for="from">from</label>
+                            <input type="text" placeholder="Enter From" id="from" required>
+                        </div>
+                        <div class="form-blocks-to-item form-blocks-item display-flex-column">
+                            <label for="to">to</label>
+                            <input type="text" placeholder="Enter Destination" id="to" required>
+                        </div>
+                    </div>
+                    <div class="display-flex form-blocks">
+                        <div class="display-flex-column form-blocks-item form-blocks-departure-item">
+                            <label for="departure-modify">departure</label>
+                            <input type="date" name="departure" id="departure-modify" min="" required>
+                        </div>
+                        <div class="display-flex-column form-blocks-item form-blocks-return-item">
+                            <label for="return-modify">return</label>
+                            <input type="date" name="return" id="return-modify" min="" required>
+                        </div>
+                    </div>
+                    <div class="display-flex form-blocks">
+                        <div class="display-flex-column form-blocks-item passengers-adult">
+                            <label for="adult">adult</label>
+                            <input type="number" class="passengers" name="adult" id="adult" value="1" min="1" max="9" required>
+                        </div>
+                        <div class="display-flex-column form-blocks-item passengers-child">
+                            <label for="child">child</label>
+                            <input type="number" class="passengers" name="child" id="child" value="0" min="0" max="6" required>
+                        </div>
+                        <div class="display-flex-column form-blocks-item passengers-infant">
+                            <label for="infant">infant</label>
+                            <input type="number" class="passengers" name="infant" id="infant" value="0" min="0" max="2" required>
+                        </div>
+                    </div>
+                    <div class="display-flex form-blocks">
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="class" id="economy" required value="economy">
+                            <label for="economy">economy</label>
+                        </div>
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="class" id="business" required value="business">
+                            <label for="business">business</label>
+                        </div>
+                        <div class="display-flex form-blocks-item-radio">
+                            <input type="radio" name="class" id="first-class" required value="first-class">
+                            <label for="first-class">first class</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-search-flights">search</button>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- main container contains filter and sort by methods along with rendered flight data -->
+        <div class="display-flex flights-main-container display-width">
+            
+            <!-- filters container -->
+            <div class="filters-container">
+                <ul class="filter-list">
+                    <li class="filter-item-header display-flex">
+                        <h2>filters</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li class="filter-item search-bar display-flex">
+                        <input class="search-input" type="text" placeholder="search airline....">
+                        <a href="#"><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="filter-item">
+                        <h2>airline</h2>
+                        <form>
+                            <ul class="airline-list">
+                                <li class="airline-item display-flex">
+                                    <input type="checkbox" name="airline" class="airline-type" id="indigo" value="indigo">
+                                    <label for="indigo">indigo</label>
+
+                                </li>
+                                <li class="airline-item display-flex">
+                                    <input type="checkbox" name="airline" class="airline-type" id="airasia" value="airasia">
+                                    <label for="airasia">airasia</label>
+                                </li>
+                                <li class="airline-item display-flex">
+                                    <input type="checkbox" name="airline" class="airline-type" id="airindia" value="airindia">
+                                    <label for="airindia">airindia</label>
+                                </li>
+                                <li class="airline-item display-flex">
+                                    <input type="checkbox" name="airline" class="airline-type" id="emirates" value="emirates">
+                                    <label for="emirates">emirates</label>
+                                </li>
+                                <li class="airline-item display-flex">
+                                    <input type="checkbox" name="airline" class="airline-type" id="vistara" value="vistara">
+                                    <label for="vistara">vistara</label>
+                                </li>
+                            </ul>
+                        </form>
+                    </li>
+                    <li class="filter-item price">
+                        <h2>price</h2>
+                        <form class="display-flex-column">
+                            <input type="range" name="price" id="price" min="500" value="30000" max="30000">
+                            <label for="price">Per each</label>
+                            <span class="price-value"></span>
+                        </form>
+                    </li>
+                    <li class="filter-item">
+                        <h2>number of stops</h2>
+                        <form>
+                            <ul class="stops-list display-flex">
+                                <li class="stops-item display-flex">
+                                    <input type="radio" class="stops-radio-input" name="stops" id="zero" value="0">
+                                    <label for="zero">0</label>
+                                </li>
+                                <li class="stops-item display-flex">
+                                    <input type="radio" class="stops-radio-input" name="stops" id="one" value="1">
+                                    <label for="one">1</label>
+                                </li>
+                                <li class="stops-item display-flex">
+                                    <input type="radio"  class="stops-radio-input" name="stops" id="all" checked value="all">
+                                    <label for="all">all</label>
+                                </li>
+                            </ul>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="display-flex-column flights-sub-main-container">
+
+                <!-- sortby methods container -->
+                <div class="sort-by-container display-flex">
+                    <h2>sort by</h2>
+                    <ul class="sort-list">
+                        <li class="sort-item sort-by-price"><a href="#">price</a></li>
+                        <li class="sort-item sort-by-duration"><a href="#">duration</a></li>
+                    </ul>
+                </div>
+
+                <!-- heading for flights data -->
+                <div class="card-item card-container-header">
+                    <ul class="display-flex card-list">
+                        <li class="card-detail">
+                            <span>airline</span>
+                        </li>
+                        <li class="card-detail display-flex-column">
+                            <span>from city</span>
+                            <span>time</span>
+                        </li>
+                        <li class="card-detail duration-stop-details display-flex-column">
+                            <span>duration</span>
+                            <span>stops</span>
+                        </li>
+                        <li class="card-detail card-to-title display-flex-column">
+                            <span>to city</span>
+                            <span>time</span>
+                        </li>
+                        <li class="card-detail card-price display-flex">
+                            <span>total Price (Rs.)</span>
+                            <i class="fa-solid fa-circle-info"></i>
+                            <div class = " specified-prices display-flex-column">
+                                <span>category (price) x (count)</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- container which gets flights data dynamically -->
+                <div class="card-container display-flex-column">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyrights">&#169; 2023 anybody can fly</p>
+    </footer>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/js/flights.js"></script>
+</body>
+</html>
